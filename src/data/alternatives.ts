@@ -145,9 +145,9 @@ export const alternatives: Alternative[] = [
 		},
 		pros: [
 			'No mandatory ID verification',
-			'Strong privacy focus — user-controlled data in community apps',
+			// 'Strong privacy focus — user-controlled data in community apps',
 			'Centralized but customizable TOS',
-			'Low data collection (no selling/sharing emphasized)',
+			// 'Low data collection (no selling/sharing emphasized)',
 			'Modern features like tasks, raid planning, stickers, custom apps',
 		],
 		cons: [
@@ -170,6 +170,7 @@ export const alternatives: Alternative[] = [
 		originNote:
 			'Company is US-based, so data and legal obligations typically follow US jurisdiction.',
 		warnings: [
+			'Currently TOS still states that they do in fact collect user personal information despite Root stating they are changing it',
 			'Centralized platforms can alter policies over time despite current privacy promises.',
 		],
 	},
