@@ -40,7 +40,7 @@ export const alternatives: Alternative[] = [
 			'Popular open-source forum software that includes both traditional threads and real-time text chat.  It is used by over 22,000 communities, including many massive ones that contain multiple millions of users each.',
 		discordFeatures: {
 			textChannel: true,
-			voiceChannel: true,
+			voiceChannel: false,
 			customEmojis: true,
 			customRoles: true,
 			permissions: true,
@@ -59,7 +59,7 @@ export const alternatives: Alternative[] = [
 		cons: [
 			'Not logged in guests may not realize there are real-time text chatrooms as they are hidden to guests',
 			'Configuration must be carefully reviewed to ensure it is as desired, since the default settings deters rapid posting or short threads',
-			'Voice chat is not natively provided, but through a community plugin that connects to Mumble',
+			'Voice chat is not provided, but a community plugin that connects to Mumble lets you see join info and user lists',
 			'If not self-hosting, paid hosting plans are expensive to access premium plugins ($20-$500)',
 			'Can take a while to load on older mobile phone browsers',
 			'Requires a large amount of server ram (2~4 GB)',
