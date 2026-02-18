@@ -174,47 +174,47 @@ export const alternatives: Alternative[] = [
 		],
 	},
 	{
-  name: 'Valour',
-  url: 'https://valour.gg',
-  description:
-    'Open-source, privacy-focused community chat app (client + server). You can try the Valour Alpha at app.valour.gg.',
-  discordFeatures: {
-    textChannel: true,
-    voiceChannel: true,
-    customEmojis: true,
-    customRoles: true,
-    permissions: true,
-    videoChannel: true,
-  },
-  pros: [
-    'Open-source client + server (AGPL)',
-    'Try the hosted Alpha instantly at app.valour.gg',
-    'Privacy policy explicitly states minimal collection and no ads/marketing emails',
-    'No third-party analytics like Google Analytics',
-    'Active development with frequent releases',
-  ],
-  cons: [
-    'Still Alpha: expect bugs, breaking changes, and missing polish',
-    'Self-hosting is possible but not “one-click”: requires running a server stack (Postgres + Redis + appsettings, etc.)',
-    'Some functionality relies on third parties (e.g., email delivery, optional error reporting, payments, push notifications, GIF search)',
-    'Smaller ecosystem/userbase than Discord (bots, integrations, community momentum)',
-  ],
-  popularity: 'popular',
-  mobileSupport: 'partial',
-  mobileNote:
+		name: 'Valour',
+		url: 'https://valour.gg',
+		description:
+			'Open-source, privacy-focused community chat app (client + server). You can try the Valour Alpha at app.valour.gg.',
+		discordFeatures: {
+			textChannel: true,
+			voiceChannel: true,
+			customEmojis: true,
+			customRoles: true,
+			permissions: true,
+			videoChannel: true,
+		},
+		pros: [
+			'Open-source client + server (AGPL)',
+			'Try the hosted Alpha instantly at app.valour.gg',
+			'Privacy policy explicitly states minimal collection and no ads/marketing emails',
+			'No third-party analytics like Google Analytics',
+			'Active development with frequent releases',
+		],
+		cons: [
+			'Still Alpha: expect bugs, breaking changes, and missing polish',
+			'Self-hosting is possible but not “one-click”: requires running a server stack (Postgres + Redis + appsettings, etc.)',
+			'Some functionality relies on third parties (e.g., email delivery, optional error reporting, payments, push notifications, GIF search)',
+			'Smaller ecosystem/userbase than Discord (bots, integrations, community momentum)',
+		],
+		popularity: 'popular',
+		mobileSupport: 'partial',
+		mobileNote:
 			'Mobile support is in progress; expect rough edges and missing features compared to desktop.',
-  nsfwPolicy: 'mixed',
-  nsfwNote:
-    'NSFW tolerance depends on individual communities and admins; always read the specific server rules.',
-  faviconUrl: 'https://valour.gg/favicon.ico',
-  originFlag: '',
-  originLabel: 'US',
-  originNote:
-    'Operated by Valour Software LLC; privacy policy states servers/providers are US-based and data may be processed in the US.',
-  warnings: [
-    'Privacy policy notes DOB is collected for 13+ age verification and IP is logged for security/media uploads.',
-    'Third parties listed include SendGrid (transactional email), Sentry (opt-in), PayPal (payments), Firebase (push on Android), Tenor (GIF search).',
-  ],
+		nsfwPolicy: 'mixed',
+		nsfwNote:
+			'NSFW tolerance depends on individual communities and admins; always read the specific server rules.',
+		faviconUrl: 'https://valour.gg/favicon.ico',
+		originFlag: '',
+		originLabel: 'US',
+		originNote:
+			'Operated by Valour Software LLC; privacy policy states servers/providers are US-based and data may be processed in the US.',
+		warnings: [
+			'Privacy policy notes DOB is collected for 13+ age verification and IP is logged for security/media uploads.',
+			'Third parties listed include SendGrid (transactional email), Sentry (opt-in), PayPal (payments), Firebase (push on Android), Tenor (GIF search).',
+		],
 	},
 	{
 		name: 'Matrix',
@@ -331,22 +331,22 @@ export const alternatives: Alternative[] = [
 			'Multi-device voice join, upcoming federation/E2EE',
 		],
 		cons: [
-			'Very small user base',
+			'Budding user base',
 			'Ecosystem and documentation are still limited / in beta',
-			'Mobile apps coming soon (not fully available yet)',
+			'Native mobile apps coming soon (not fully available yet)',
 		],
-		popularity: 'less',
+		popularity: 'popular',
 		mobileSupport: 'partial',
 		mobileNote:
-			'Mobile support and client quality are still unclear / coming soon; expect rough edges.',
-		nsfwPolicy: 'unknown',
+			'Mobile support coming soon, installable as PWA; expect rough edges.',
+		nsfwPolicy: 'allowed',
 		nsfwNote:
-			'NSFW policy not clearly communicated; always read the current TOS and community rules.',
+			'NSFW is allowed in the official instance in clearly defined +18 spaces; self-hosting instances dependent on hosting location and terms',
 		faviconUrl: 'https://fluxerstatic.com/web/favicon.ico',
 		originFlag: '🇸🇪',
 		originLabel: 'SE',
 		originNote:
-			'Smaller indie projects may not clearly state legal jurisdiction; treat them as experimental.',
+			'Project and company are Sweden-based. (company name Fluxer Platform AB)',
 		warnings: [
 			'Indie platforms can shut down quickly or pivot; avoid depending on them for critical communities.',
 		],
@@ -402,24 +402,18 @@ export const alternatives: Alternative[] = [
 			'Completely self-hostable, no central server',
 			'Low self-hosted server requirements',
 			'4K@60FPS video quality',
-			'No artifical feature or user count limits'
+			'No artifical feature or user count limits',
 		],
-		cons: [
-			'No app, web only',
-			'Currently early in development',
-		],
+		cons: ['No app, web only', 'Currently early in development'],
 		popularity: 'less',
 		mobileSupport: 'no',
-		mobileNote:
-			'Marked as \'not yet\', so potentially in future',
+		mobileNote: "Marked as 'not yet', so potentially in future",
 		nsfwPolicy: 'allowed',
-		nsfwNote:
-			'Dependent on your host\'s/ISP acceptable use policy.',
+		nsfwNote: "Dependent on your host's/ISP acceptable use policy.",
 		faviconUrl: 'https://sharkord.com/favicon.ico',
 		originFlag: '🌍',
 		originLabel: 'Global',
-		originNote:
-			'',
+		originNote: '',
 		warnings: [
 			'Due to bugs, was unable to successfully do a voice chat / screenshare test as of Feb 12, 2026.',
 		],
@@ -640,25 +634,22 @@ export const alternatives: Alternative[] = [
 			'Accountless, uses automatically managed security certificates instead',
 			'Set up private rooms or other role based access controls',
 			'Can display current status / user list on your own web page via the API',
-			'Join one of hundreds of servers already online globally, or host your own!',				
+			'Join one of hundreds of servers already online globally, or host your own!',
 		],
 		cons: [
 			'Some documentation no longer online and must find it on way back machine archives',
 			'Text channels are strictly for simple real-time text and small image sharing -- they do not persist over time',
-			'No screenshare -- Mumble users typically achieve this via completely separate apps like Jitsi or Nextcloud to handle screen share',						
+			'No screenshare -- Mumble users typically achieve this via completely separate apps like Jitsi or Nextcloud to handle screen share',
 		],
 		popularity: 'popular',
 		mobileSupport: 'partial',
 		mobileNote:
 			'Has unofficial mobile apps with limited feature set and less updates.',
 		nsfwPolicy: 'mixed',
-		nsfwNote:
-			'NSFW policy depends on each server owner.',
-		faviconUrl:
-			'https://www.mumble.info/favicon.ico',
+		nsfwNote: 'NSFW policy depends on each server owner.',
+		faviconUrl: 'https://www.mumble.info/favicon.ico',
 		originFlag: '🌍',
 		originLabel: 'Global / decentralized',
-		originNote:
-			'Open source.'	
+		originNote: 'Open source.',
 	},
 ];
