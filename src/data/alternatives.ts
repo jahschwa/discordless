@@ -34,6 +34,56 @@ export interface Alternative {
 
 export const alternatives: Alternative[] = [
 	{
+		name: 'Spacebar',
+		url: 'https://spacebar.chat',
+		description:
+			"Free and open-source, self-hostable reimplementation of Discord's backend and frontend (formerly Fosscord). Fully Discord-compatible API, allowing existing clients, bots, and apps to connect with minimal changes. Focuses on privacy, control, and feature parity.",
+		discordFeatures: {
+			textChannel: true,
+			voiceChannel: true, // Supported via WebRTC, though may have issues
+			videoChannel: true, // Partial / in progress via WebRTC
+			screenSharing: false, // Not reliably working yet (WebRTC implementation needs fixes)
+			customEmojis: true,
+			customRoles: true,
+			permissions: true,
+		},
+		pros: [
+			'Strong Discord compatibility — use your favorite Discord clients/bots/apps',
+			'Fully self-hostable with complete control over data and configuration',
+			'Open-source (AGPL)',
+			'Guilds (servers), text channels, messaging, roles, permissions already functional',
+			'Web frontend included; no central authority',
+			'Bot invites and API compatibility for easy migration',
+		],
+		cons: [
+			'Alpha stage — expect bugs, incomplete features, and ongoing development',
+			'Screensharing and advanced WebRTC features need work (community contributions welcome)',
+			'Smaller user base and ecosystem compared to established options',
+			'Self-hosting requires setup (Docker supported, but not one-click for most)',
+			'No official mobile apps (relies on Discord-compatible clients, which vary)',
+		],
+		popularity: 'popular',
+		mobileSupport: 'partial',
+		mobileNote:
+			'Works via third-party Discord-compatible mobile clients; no dedicated Spacebar mobile app yet; experience may vary.',
+		nsfwPolicy: 'allowed',
+		nsfwNote:
+			'Self-hosted instances have full control; no central platform policy — depends on your hosting rules and instance admin.',
+		faviconUrl: 'https://spacebar.chat/favicon.ico',
+		originFlag: '🌍',
+		originLabel: 'Global / decentralized',
+		originNote:
+			'Community-driven open-source project; no single company origin; self-hosted instances follow your jurisdiction.',
+		warnings: [
+			'Early development — critical features like reliable voice/video/screenshare may break or require fixes.',
+			'Limited documentation and community momentum compared to more mature alternatives.',
+			'Contributions needed; project explicitly prefers human (non-AI) development help.',
+		],
+		isBestBet: false,
+		bestBetReason:
+			'Promising for Discord users wanting full compatibility and self-hosting without central control; ideal if you rely on existing Discord bots/clients and are willing to self-host or join early instances.',
+	},
+	{
 		name: 'Discourse',
 		url: 'https://github.com/discourse/discourse',
 		description:
