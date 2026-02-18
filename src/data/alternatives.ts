@@ -76,8 +76,8 @@ export const alternatives: Alternative[] = [
 		originLabel: 'US',
 		originNote:
 			'Project is US-based, but self-hosted instances can be anywhere with their own policies.',
-		warnings: [],
-		isBestBet: true,
+		warnings: ['any Discourse mods can see your IP'],
+		isBestBet: false,
 		bestBetReason:
 			'A forums experience that is open-source, self-hostable, and modern; it brings the real-time interactivity that Discord users expect to the forums paradigm.',
 	},
